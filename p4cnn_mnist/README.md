@@ -1,4 +1,4 @@
-"# P4CNN Rotated MNIST 实验
+# P4CNN Rotated MNIST 实验
 
 本实验实现了基于旋转等变神经网络的Rotated MNIST分类任务。
 
