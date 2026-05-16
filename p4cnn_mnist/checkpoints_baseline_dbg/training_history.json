@@ -1,0 +1,24 @@
+{
+    "model": "baseline",
+    "n_channels": 10,
+    "baseline_width": 21,
+    "baseline_width_last": 7,
+    "ref_p4_param_count": 31130,
+    "trainable_param_count": 31132,
+    "train_losses": [
+        1.0428478458818917
+    ],
+    "train_accs": [
+        65.39
+    ],
+    "val_losses": [
+        0.6338245438204871
+    ],
+    "val_accs": [
+        78.6
+    ],
+    "best_epoch": 1,
+    "best_val_acc": 78.6,
+    "test_acc": 80.98,
+    "test_error": 19.019999999999996
+}

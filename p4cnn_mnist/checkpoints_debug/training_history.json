@@ -1,0 +1,18 @@
+{
+    "train_losses": [
+        0.9186957027203739
+    ],
+    "train_accs": [
+        69.44
+    ],
+    "val_losses": [
+        0.4656484914677484
+    ],
+    "val_accs": [
+        85.5
+    ],
+    "best_epoch": 1,
+    "best_val_acc": 85.5,
+    "test_acc": 86.23,
+    "test_error": 13.769999999999996
+}
