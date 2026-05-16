@@ -45,15 +45,9 @@ def train_one_epoch(model, train_loader, criterion, optimizer, device, epoch):
         loss.backward()
         optimizer.step()
         
-        running_loss += loss.item()
-        _, predicted = outputs.max(1)
-        total += targets.size(0)
-        correct += predicted.eq(targets).sum().item()
-        
-        if (batch_idx + 1) % 50 == 0:
-            print(f'  Batch [{batch_idx + 1}/{len(train_loader)}] '
-                  f'Loss: {loss.item():.4f} | '
-                  f'Acc: {100. * correct / total:.2f}%')
+        print(f'[{batch_idx}/{len(train_loader)}] '
+                f'Loss: {loss.item():.4f} | '
+                f'Acc: {100. * correct / total:.2f}%')
     
     train_loss = running_loss / len(train_loader)
     train_acc = 100. * correct / total
@@ -273,7 +267,7 @@ def train(args):
     else:
         print("对照实验说明:")
         print("="*60)
-        print("  论文 2.28% 为 P4CNN 在 Rotated MNIST 上的报告结果；")
+
         print(f"  本 Baseline 测试错误率: {test_error:.2f}%（可与同设置 P4CNN 直接对比）。")
     
     # 保存训练历史

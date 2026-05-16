@@ -35,7 +35,7 @@ class P4CNN(enn.EquivariantModule):
         super(P4CNN, self).__init__()
         
         # 定义 p4 群 (4 个离散旋转)
-        self.gspace = gspaces.rot2dOnR2(N=4)
+        self.gspace = gspaces.rot2dOnR2(N=8)
         
         # 输入场类型：平凡表示 (单通道灰度图)
         self.in_type = enn.FieldType(self.gspace, [self.gspace.trivial_repr])
